@@ -22,6 +22,6 @@ Modulo is a game created by a team of 3 including me during our second semester 
  
 ## Team
 ### Orbital Launch
- Romil Tendulkar: Gameplay, Audio, Scripting
- Supreeth Rao Pejawar: Art, Graphics, Gameplay
- Trevor Harron: Engine, Graphics, Music
+* Romil Tendulkar: Gameplay, Audio, Scripting
+* Supreeth Rao Pejawar: Art, Graphics, Gameplay
+* Trevor Harron: Engine, Graphics, Music
