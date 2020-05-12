@@ -1,0 +1,24 @@
+{
+  "type": 9,
+  "game-state": {},
+  "sprite": {
+    "texture": "goal.png"
+  },
+  "transform": {
+    "x": 0,
+    "y": 0,
+    "scaleX": 60.0,
+    "scaleY": 60.0,
+    "rotate": false
+  },
+  "body": {
+    "mass": 1,
+    "shape": "rect",
+    "radius": 30,
+    "ridged": false,
+    "movable": false
+  },
+  "audio": {
+    "audio": "victory.wav"
+  }
+}

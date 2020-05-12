@@ -1,0 +1,24 @@
+{
+  "type": 15,
+  "sprite": {
+    "texture": "DashLock.png",
+    "animated": false
+  },
+  "transform": {
+    "x": 0,
+    "y": 0,
+    "scaleX": 30,
+    "scaleY": 30
+  },
+  "body": {
+    "mass": 50,
+    "shape": "rect",
+    "width": 50,
+    "height": 50,
+    "movable": false,
+    "ridged": true
+  },
+  "cage": {
+    "key": "dash"
+  }
+}

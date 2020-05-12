@@ -1,0 +1,31 @@
+{
+  "type": 2,
+    "sprite": {
+        "texture": "Enemy1.png",
+        "animated": true,
+        "x_off": 0,
+        "y_off": 0,
+        "x_mul": 0.2,
+        "y_mul": 1.0,
+        "speed": 0.2
+    },
+  "transform": {
+    "x": 0,
+    "y": 0,
+    "scaleX": 30,
+    "scaleY": 30
+  },
+    "body": {
+        "mass": 50,
+        "shape": "rect",
+        "width": 20,
+        "height": 20,
+        "movable": true,
+        "physics": true,
+        "ridged": true
+    },
+  "walk": {
+    "speed": -0.2
+  },
+  "enemy": {}
+}

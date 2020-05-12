@@ -1,0 +1,896 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9AD7F407-7E41-4D2C-BFEC-A3A707437956}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameEngine1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>Modulo</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)Include\Lua;$(ProjectDir)lib\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\inc;$(ProjectDir)lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\inc;$(ProjectDir)Include;$(ProjectDir)lib\freetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\lib;$(ProjectDir)\lib\Win32;$(ProjectDir)\lib\x64;$(ProjectDir)\lib\x86;$(ProjectDir)\lib\freetype\include;$(ProjectDir)\lib\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\lib;$(ProjectDir)\lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\lib;$(ProjectDir)\lib\Lua;$(ProjectDir)lib;$(ProjectDir)lib\x86;$(ProjectDir)lib\Win32;$(ProjectDir)lib\x64;$(ProjectDir)lib\freetype\include;$(ProjectDir)lib\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\lib;$(ProjectDir)lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lualib.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;OpenGL32.lib;fmod_vc.lib;fmodstudio_vc.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>ucrtbased.dll;vcruntime140d.dll;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib;$(ProjectDir)lib\x86;$(ProjectDir)lib\Win32;$(ProjectDir)lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2test.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;lualib.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)Include\Lua;$(ProjectDir)lib\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\inc;$(ProjectDir)lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\inc;$(ProjectDir)Include;$(ProjectDir)lib\freetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>stdafx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <SupportJustMyCode>true</SupportJustMyCode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)\lib;$(ProjectDir)\lib\Win32;$(ProjectDir)\lib\x64;$(ProjectDir)\lib\x86;$(ProjectDir)\lib\freetype\include;$(ProjectDir)\lib\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\lib;$(ProjectDir)\lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\lib;$(ProjectDir)\lib\Lua;$(ProjectDir)lib;$(ProjectDir)lib\x86;$(ProjectDir)lib\Win32;$(ProjectDir)lib\x64;$(ProjectDir)lib\freetype\include;$(ProjectDir)lib\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\lib;$(ProjectDir)lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lualib.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;fmod_vc.lib;fmodstudio_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>ucrtbased.dll;vcruntime140d.dll;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\SDL2.0 Lib\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\SDL2.0 Lib\lib\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2test.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;lualib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BasicEngine\Abilities\AbilityFactory.cpp" />
+    <ClCompile Include="BasicEngine\Abilities\DashAbility.cpp" />
+    <ClCompile Include="BasicEngine\Abilities\DoppleJump.cpp" />
+    <ClCompile Include="BasicEngine\Audio\Audio_Manager.cpp" />
+    <ClCompile Include="BasicEngine\Audio\Audio_Engine.cpp" />
+    <ClCompile Include="BasicEngine\Components\AbilityNode.cpp" />
+    <ClCompile Include="BasicEngine\Components\Audio.cpp" />
+    <ClCompile Include="BasicEngine\Components\Body.cpp" />
+    <ClCompile Include="BasicEngine\Components\Bullet.cpp" />
+    <ClCompile Include="BasicEngine\Components\Button.cpp" />
+    <ClCompile Include="BasicEngine\Components\Cage.cpp" />
+    <ClCompile Include="BasicEngine\Components\CheckPoint.cpp" />
+    <ClCompile Include="BasicEngine\Components\Collectable.cpp" />
+    <ClCompile Include="BasicEngine\Components\Controller.cpp" />
+    <ClCompile Include="BasicEngine\Components\Cursor.cpp" />
+    <ClCompile Include="BasicEngine\Components\Damage.cpp" />
+    <ClCompile Include="BasicEngine\Components\Doom.cpp" />
+    <ClCompile Include="BasicEngine\Components\Enemy.cpp" />
+    <ClCompile Include="BasicEngine\Components\FallDown.cpp" />
+    <ClCompile Include="BasicEngine\Components\FireMissle.cpp" />
+    <ClCompile Include="BasicEngine\Components\Friend.cpp" />
+    <ClCompile Include="BasicEngine\Components\Health.cpp" />
+    <ClCompile Include="BasicEngine\Components\JumpDown.cpp" />
+    <ClCompile Include="BasicEngine\Components\LevelState.cpp" />
+    <ClCompile Include="BasicEngine\Components\Platform.cpp" />
+    <ClCompile Include="BasicEngine\Components\Player.cpp" />
+    <ClCompile Include="BasicEngine\Components\Slider.cpp" />
+    <ClCompile Include="BasicEngine\Components\Spikes.cpp" />
+    <ClCompile Include="BasicEngine\Components\Sprite.cpp" />
+    <ClCompile Include="BasicEngine\Components\Start.cpp" />
+    <ClCompile Include="BasicEngine\Components\Switch.cpp" />
+    <ClCompile Include="BasicEngine\Components\Text.cpp" />
+    <ClCompile Include="BasicEngine\Components\Transform.cpp" />
+    <ClCompile Include="BasicEngine\Components\Tutorial.cpp" />
+    <ClCompile Include="BasicEngine\Components\Victory.cpp" />
+    <ClCompile Include="BasicEngine\Components\Walk.cpp" />
+    <ClCompile Include="BasicEngine\Events\AbilityEvent.cpp" />
+    <ClCompile Include="BasicEngine\Events\DestroyEvent.cpp" />
+    <ClCompile Include="BasicEngine\Events\ReleaseEvent.cpp" />
+    <ClCompile Include="BasicEngine\Events\ResetPlayerEvent.cpp" />
+    <ClCompile Include="BasicEngine\Events\TextEvent.cpp" />
+    <ClCompile Include="BasicEngine\Graphics\IndexBuffer.cpp" />
+    <ClCompile Include="BasicEngine\Graphics\renderer.cpp" />
+    <ClCompile Include="BasicEngine\Graphics\VertexArray.cpp" />
+    <ClCompile Include="BasicEngine\Graphics\VertexBuffer.cpp" />
+    <ClCompile Include="BasicEngine\Managers\FrameRate_Controller.cpp" />
+    <ClCompile Include="BasicEngine\GameEngine.cpp" />
+    <ClCompile Include="BasicEngine\GameObject.cpp" />
+    <ClCompile Include="BasicEngine\GameObjectFactory.cpp" />
+    <ClCompile Include="BasicEngine\Managers\GameObject_Manager.cpp" />
+    <ClCompile Include="BasicEngine\Graphics\GraphicsManager.cpp" />
+    <ClCompile Include="BasicEngine\Managers\Input_Manager.cpp" />
+    <ClCompile Include="BasicEngine\Events\Event.cpp" />
+    <ClCompile Include="BasicEngine\Managers\EventManager.cpp" />
+    <ClCompile Include="BasicEngine\Events\CollisionEvent.cpp" />
+    <ClCompile Include="BasicEngine\Managers\MemoryManager.cpp" />
+    <ClCompile Include="BasicEngine\Managers\NarrativeManager.cpp" />
+    <ClCompile Include="BasicEngine\State\IntroState.cpp" />
+    <ClCompile Include="BasicEngine\State\GameClearState.cpp" />
+    <ClCompile Include="BasicEngine\State\GameOverState.cpp" />
+    <ClCompile Include="BasicEngine\Events\DamageEvent.cpp" />
+    <ClCompile Include="BasicEngine\Events\ChangeSpriteEvent.cpp" />
+    <ClCompile Include="BasicEngine\Managers\InputFacade.cpp" />
+    <ClCompile Include="BasicEngine\Managers\FileManager.cpp" />
+    <ClCompile Include="BasicEngine\Events\GoalEvent.cpp" />
+    <ClCompile Include="BasicEngine\Graphics\Camera.cpp" />
+    <ClCompile Include="BasicEngine\Events\ClickEvent.cpp" />
+    <ClCompile Include="Include\ImGui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="Include\ImGui\imgui_impl_sdl.cpp" />
+    <ClCompile Include="Include\ImGui\imgui.cpp" />
+    <ClCompile Include="Include\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="Include\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="Include\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="BasicEngine\Managers\Physics_Manager.cpp" />
+    <ClCompile Include="BasicEngine\Managers\Resource_Manager.cpp" />
+    <ClCompile Include="BasicEngine\Managers\CollisionManager.cpp" />
+    <ClCompile Include="BasicEngine\Graphics\Texture.cpp" />
+    <ClCompile Include="BasicEngine\Events\MoveEvent.cpp" />
+    <ClCompile Include="BasicEngine\Events\PauseEvent.cpp" />
+    <ClCompile Include="BasicEngine\Events\FireMissleEvent.cpp" />
+    <ClCompile Include="BasicEngine\Graphics\Shader.cpp" />
+    <ClCompile Include="BasicEngine\State\PauseState.cpp" />
+    <ClCompile Include="BasicEngine\State\PlayState.cpp" />
+    <ClCompile Include="BasicEngine\Graphics\Particle.cpp" />
+    <ClCompile Include="BasicEngine\Managers\ParticleManager.cpp" />
+    <ClCompile Include="BasicEngine\State\NarrativeState.cpp" />
+    <ClCompile Include="BasicEngine\Abilities\ProtectAbility.cpp" />
+    <ClCompile Include="src\glad.c" />
+    <ClCompile Include="Include\stdafx.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="BasicEngine\Graphics\TextRendering.cpp" />
+    <ClCompile Include="BasicEngine\State\UtilityState.cpp" />
+    <ClCompile Include="BasicEngine\Abilities\StompAbility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BasicEngine\Abilities\AbilityFactory.h" />
+    <ClInclude Include="BasicEngine\Abilities\DoppleJump.h" />
+    <ClInclude Include="BasicEngine\Audio\Audio_Manager.h" />
+    <ClInclude Include="BasicEngine\Audio\Audio_Engine.h" />
+    <ClInclude Include="BasicEngine\Abilities\Ability.h" />
+    <ClInclude Include="BasicEngine\Components\AbilityNode.h" />
+    <ClInclude Include="BasicEngine\Components\Audio.h" />
+    <ClInclude Include="BasicEngine\Components\Body.h" />
+    <ClInclude Include="BasicEngine\Components\Bullet.h" />
+    <ClInclude Include="BasicEngine\Components\Button.h" />
+    <ClInclude Include="BasicEngine\Components\Cage.h" />
+    <ClInclude Include="BasicEngine\Components\CheckPoint.h" />
+    <ClInclude Include="BasicEngine\Components\Collectable.h" />
+    <ClInclude Include="BasicEngine\Components\Component.h" />
+    <ClInclude Include="BasicEngine\Components\Controller.h" />
+    <ClInclude Include="BasicEngine\Components\Cursor.h" />
+    <ClInclude Include="BasicEngine\Components\Damage.h" />
+    <ClInclude Include="BasicEngine\Components\definitions.h" />
+    <ClInclude Include="BasicEngine\Components\Doom.h" />
+    <ClInclude Include="BasicEngine\Components\Enemy.h" />
+    <ClInclude Include="BasicEngine\Components\FallDown.h" />
+    <ClInclude Include="BasicEngine\Components\FireMissle.h" />
+    <ClInclude Include="BasicEngine\Components\Friend.h" />
+    <ClInclude Include="BasicEngine\Components\Health.h" />
+    <ClInclude Include="BasicEngine\Components\JumpDown.h" />
+    <ClInclude Include="BasicEngine\Components\LevelState.h" />
+    <ClInclude Include="BasicEngine\Components\Platform.h" />
+    <ClInclude Include="BasicEngine\Components\Player.h" />
+    <ClInclude Include="BasicEngine\Components\Slider.h" />
+    <ClInclude Include="BasicEngine\Components\Spikes.h" />
+    <ClInclude Include="BasicEngine\Components\Sprite.h" />
+    <ClInclude Include="BasicEngine\Components\Start.h" />
+    <ClInclude Include="BasicEngine\Components\Switch.h" />
+    <ClInclude Include="BasicEngine\Components\Text.h" />
+    <ClInclude Include="BasicEngine\Components\Transform.h" />
+    <ClInclude Include="BasicEngine\Components\Tutorial.h" />
+    <ClInclude Include="BasicEngine\Components\Victory.h" />
+    <ClInclude Include="BasicEngine\Components\Walk.h" />
+    <ClInclude Include="BasicEngine\Events\TextEvent.h" />
+    <ClInclude Include="BasicEngine\Graphics\Camera.h" />
+    <ClInclude Include="BasicEngine\Events\ClickEvent.h" />
+    <ClInclude Include="BasicEngine\Managers\Cell.h" />
+    <ClInclude Include="BasicEngine\Managers\GameGrid.h" />
+    <ClInclude Include="BasicEngine\Managers\NarrativeManager.h" />
+    <ClInclude Include="Include\common_functions.h" />
+    <ClInclude Include="BasicEngine\Abilities\DashAbility.h" />
+    <ClInclude Include="BasicEngine\Events\AbilityEvent.h" />
+    <ClInclude Include="BasicEngine\ComponentCreator.h" />
+    <ClInclude Include="BasicEngine\Events\DestroyEvent.h" />
+    <ClInclude Include="BasicEngine\Events\ReleaseEvent.h" />
+    <ClInclude Include="BasicEngine\Events\ResetPlayerEvent.h" />
+    <ClInclude Include="BasicEngine\Graphics\IndexBuffer.h" />
+    <ClInclude Include="BasicEngine\Graphics\renderer.h" />
+    <ClInclude Include="BasicEngine\Graphics\VertexArray.h" />
+    <ClInclude Include="BasicEngine\Graphics\VertexBuffer.h" />
+    <ClInclude Include="BasicEngine\Graphics\VertexBufferLayout.h" />
+    <ClInclude Include="BasicEngine\Managers\FrameRate_Controller.h" />
+    <ClInclude Include="BasicEngine\GameEngine.h" />
+    <ClInclude Include="BasicEngine\GameObject.h" />
+    <ClInclude Include="BasicEngine\GameObjectFactory.h" />
+    <ClInclude Include="BasicEngine\Managers\GameObject_Manager.h" />
+    <ClInclude Include="BasicEngine\Graphics\GraphicsManager.h" />
+    <ClInclude Include="BasicEngine\Events\Event.h" />
+    <ClInclude Include="BasicEngine\Managers\EventManager.h" />
+    <ClInclude Include="BasicEngine\Events\CollisionEvent.h" />
+    <ClInclude Include="BasicEngine\Managers\MemoryManager.h" />
+    <ClInclude Include="BasicEngine\State\GameState.h" />
+    <ClInclude Include="BasicEngine\State\GameClearState.h" />
+    <ClInclude Include="BasicEngine\State\GameOverState.h" />
+    <ClInclude Include="BasicEngine\Events\DamageEvent.h" />
+    <ClInclude Include="BasicEngine\Events\ChangeSpriteEvent.h" />
+    <ClInclude Include="BasicEngine\Managers\FileManager.h" />
+    <ClInclude Include="BasicEngine\Events\GoalEvent.h" />
+    <ClInclude Include="Include\ImGui\imgui_impl_opengl3.h" />
+    <ClInclude Include="Include\ImGui\imgui_impl_sdl.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\fsbank\inc\fsbank.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\fsbank\inc\fsbank_errors.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\examples\common.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\examples\common_platform.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\examples\plugins\BladeMP3EncDLL.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\inc\fmod.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\inc\fmod.hpp" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\inc\fmod_codec.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\inc\fmod_common.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\inc\fmod_dsp.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\inc\fmod_dsp_effects.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\inc\fmod_errors.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\inc\fmod_output.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\studio\examples\common.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\studio\examples\common_platform.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\studio\inc\fmod_studio.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\studio\inc\fmod_studio.hpp" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\api\studio\inc\fmod_studio_common.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\plugins\google_vr\inc\RoomProperties.h" />
+    <ClInclude Include="Include\FMOD SoundSystem\FMOD Studio API Windows\plugins\resonance_audio\inc\RoomProperties.h" />
+    <ClInclude Include="Include\ImGui\imconfig.h" />
+    <ClInclude Include="Include\ImGui\imgui.h" />
+    <ClInclude Include="Include\ImGui\imgui_internal.h" />
+    <ClInclude Include="Include\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="Include\ImGui\imstb_textedit.h" />
+    <ClInclude Include="Include\ImGui\imstb_truetype.h" />
+    <ClInclude Include="Include\Lua\lapi.h" />
+    <ClInclude Include="Include\Lua\lauxlib.h" />
+    <ClInclude Include="Include\Lua\lcode.h" />
+    <ClInclude Include="Include\Lua\lctype.h" />
+    <ClInclude Include="Include\Lua\ldebug.h" />
+    <ClInclude Include="Include\Lua\ldo.h" />
+    <ClInclude Include="Include\Lua\lfunc.h" />
+    <ClInclude Include="Include\Lua\lgc.h" />
+    <ClInclude Include="Include\Lua\llex.h" />
+    <ClInclude Include="Include\Lua\llimits.h" />
+    <ClInclude Include="Include\Lua\lmem.h" />
+    <ClInclude Include="Include\Lua\lobject.h" />
+    <ClInclude Include="Include\Lua\lopcodes.h" />
+    <ClInclude Include="Include\Lua\lparser.h" />
+    <ClInclude Include="Include\Lua\lprefix.h" />
+    <ClInclude Include="Include\Lua\lstate.h" />
+    <ClInclude Include="Include\Lua\lstring.h" />
+    <ClInclude Include="Include\Lua\ltable.h" />
+    <ClInclude Include="Include\Lua\ltm.h" />
+    <ClInclude Include="Include\Lua\lua.h" />
+    <ClInclude Include="Include\Lua\lua.hpp" />
+    <ClInclude Include="Include\Lua\luaconf.h" />
+    <ClInclude Include="Include\Lua\lualib.h" />
+    <ClInclude Include="Include\Lua\lundump.h" />
+    <ClInclude Include="Include\Lua\lvm.h" />
+    <ClInclude Include="Include\Lua\lzio.h" />
+    <ClInclude Include="Include\rapidjson\allocators.h" />
+    <ClInclude Include="Include\rapidjson\cursorstreamwrapper.h" />
+    <ClInclude Include="Include\rapidjson\document.h" />
+    <ClInclude Include="Include\rapidjson\encodedstream.h" />
+    <ClInclude Include="Include\rapidjson\encodings.h" />
+    <ClInclude Include="Include\rapidjson\filereadstream.h" />
+    <ClInclude Include="Include\rapidjson\filewritestream.h" />
+    <ClInclude Include="Include\rapidjson\fwd.h" />
+    <ClInclude Include="Include\rapidjson\istreamwrapper.h" />
+    <ClInclude Include="Include\rapidjson\memorybuffer.h" />
+    <ClInclude Include="Include\rapidjson\memorystream.h" />
+    <ClInclude Include="Include\rapidjson\ostreamwrapper.h" />
+    <ClInclude Include="Include\rapidjson\pointer.h" />
+    <ClInclude Include="Include\rapidjson\prettywriter.h" />
+    <ClInclude Include="Include\rapidjson\rapidjson.h" />
+    <ClInclude Include="Include\rapidjson\reader.h" />
+    <ClInclude Include="Include\rapidjson\schema.h" />
+    <ClInclude Include="Include\rapidjson\stream.h" />
+    <ClInclude Include="Include\rapidjson\stringbuffer.h" />
+    <ClInclude Include="Include\rapidjson\writer.h" />
+    <ClInclude Include="BasicEngine\Managers\Input_Manager.h" />
+    <ClInclude Include="BasicEngine\State\IntroState.h" />
+    <ClInclude Include="BasicEngine\Managers\InputFacade.h" />
+    <ClInclude Include="lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\inc\fmod_studio.h" />
+    <ClInclude Include="lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\inc\fmod_studio.hpp" />
+    <ClInclude Include="lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\inc\fmod_studio_common.h" />
+    <ClInclude Include="lib\freetype\include\ft2build.h" />
+    <ClInclude Include="BasicEngine\Managers\Physics_Manager.h" />
+    <ClInclude Include="BasicEngine\Managers\Resource_Manager.h" />
+    <ClInclude Include="BasicEngine\Managers\CollisionManager.h" />
+    <ClInclude Include="BasicEngine\Graphics\Texture.h" />
+    <ClInclude Include="BasicEngine\Events\MoveEvent.h" />
+    <ClInclude Include="BasicEngine\Events\PauseEvent.h" />
+    <ClInclude Include="BasicEngine\Events\FireMissleEvent.h" />
+    <ClInclude Include="BasicEngine\Graphics\Shader.h" />
+    <ClInclude Include="BasicEngine\State\PauseState.h" />
+    <ClInclude Include="BasicEngine\State\PlayState.h" />
+    <ClInclude Include="Include\stdafx.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="BasicEngine\Graphics\TextRendering.h" />
+    <ClInclude Include="BasicEngine\Graphics\Particle.h" />
+    <ClInclude Include="BasicEngine\Managers\ParticleManager.h" />
+    <ClInclude Include="BasicEngine\State\NarrativeState.h" />
+    <ClInclude Include="BasicEngine\State\UtilityState.h" />
+    <ClInclude Include="BasicEngine\Abilities\ProtectAbility.h" />
+    <ClInclude Include="BasicEngine\Abilities\StompAbility.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\engine rubric.pdf" />
+    <CopyFileToFolders Include="Config\config.json">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <None Include="Config\narrative-0.conf.json" />
+    <None Include="Config\narrative-1.conf.json" />
+    <None Include="Config\narrative-2.conf.json" />
+    <None Include="Config\narrative-3.conf.json" />
+    <None Include="Config\section-2.conf.json" />
+    <None Include="Config\section-3.conf.json" />
+    <None Include="Config\section-final.conf.json" />
+    <None Include="Config\utility.conf.json" />
+    <None Include="Resources\GameObjects\friend.json" />
+    <None Include="Resources\GameObjects\platform.json" />
+    <None Include="Resources\GameObjects\tutorial.json" />
+    <None Include="Resources\GameObjects\victory.json" />
+    <None Include="Resources\Level\act-0.csv" />
+    <None Include="Resources\Level\act-1.csv" />
+    <None Include="Resources\Level\act-2.csv" />
+    <None Include="Resources\Level\act-3.csv" />
+    <None Include="Resources\Level\act-bad-end.csv" />
+    <None Include="Resources\Level\act-best-end.csv" />
+    <None Include="Resources\Level\act-final.csv" />
+    <None Include="Resources\Level\act-worst-end.csv" />
+    <None Include="Resources\Level\bad-end.csv" />
+    <None Include="Resources\Level\controls.csv" />
+    <None Include="Resources\Level\credits.csv" />
+    <None Include="Resources\Level\game-clear.csv" />
+    <None Include="Resources\Level\game-over.csv" />
+    <None Include="Resources\Level\level-0-0.csv" />
+    <None Include="Resources\Level\level-1-0.csv" />
+    <None Include="Resources\Level\level-1-1.csv" />
+    <None Include="Resources\Level\level-2-0.csv" />
+    <None Include="Resources\Level\level-2-1.csv" />
+    <None Include="Resources\Level\level-3-0.csv" />
+    <None Include="Resources\Level\level-3-1.csv" />
+    <None Include="Resources\Level\level-final.csv" />
+    <None Include="Resources\Menu\back-menu.json" />
+    <None Include="Resources\Level\settings.csv" />
+    <None Include="Resources\Menu\game-clear-menu.json" />
+    <None Include="Resources\Menu\pause-menu.json" />
+    <None Include="Resources\Menu\quit-menu.json" />
+    <None Include="Resources\Menu\start-menu.json" />
+    <None Include="Resources\Menu\victory-menu.json" />
+    <None Include="Scripts\EnemyAnimationScript.lua" />
+    <None Include="Scripts\PAnimScript.lua" />
+    <None Include="Shaders\Basic.shader" />
+    <None Include="Shaders\Debug.shader" />
+    <None Include="Shaders\Text.shader" />
+    <CopyFileToFolders Include="fmod.dll">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="fmodstudio.dll">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </CopyFileToFolders>
+    <None Include="Config\game-clear.conf.json" />
+    <None Include="Config\game-over.conf.json" />
+    <None Include="Config\pause.conf.json" />
+    <None Include="Config\prototype-1.conf.json" />
+    <None Include="Config\section-1.conf.json" />
+    <None Include="Config\section-0.conf.json" />
+    <None Include="Resources\GameObjects\ability-node.json" />
+    <None Include="Resources\GameObjects\cage.json" />
+    <None Include="Config\prototype2.conf.json" />
+    <None Include="Config\simple.conf.json" />
+    <None Include="Debug\Config\config.json" />
+    <None Include="Debug\Resources\GameObjects\burst.json" />
+    <None Include="Debug\Resources\GameObjects\end.json" />
+    <None Include="Debug\Resources\GameObjects\full-window.json" />
+    <None Include="Debug\Resources\GameObjects\player.json" />
+    <None Include="Debug\Resources\GameObjects\shooter.json" />
+    <None Include="Debug\Resources\GameObjects\spikes.json" />
+    <None Include="Debug\Resources\GameObjects\state.json" />
+    <None Include="Debug\Resources\GameObjects\wall.json" />
+    <None Include="Debug\Resources\Level\game-clear.json" />
+    <None Include="Debug\Resources\Level\game-over.json" />
+    <None Include="Debug\Resources\Level\intro.json" />
+    <None Include="Debug\Resources\Level\pause.json" />
+    <None Include="Debug\Resources\Level\sample.json" />
+    <None Include="Debug\Graphics\Shaders\Basic.shader" />
+    <None Include="Debug\Graphics\Shaders\Debug.shader" />
+    <None Include="Debug\Graphics\Shaders\Text.shader" />
+    <None Include="lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\inc\fmod_studio.cs" />
+    <None Include="lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\lib\fmodstudio.dll" />
+    <None Include="lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\lib\fmodstudio64.dll" />
+    <None Include="lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\lib\fmodstudioL.dll" />
+    <None Include="lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\lib\fmodstudioL64.dll" />
+    <None Include="lib\x64\SDL2.dll" />
+    <None Include="lib\x86\SDL2.dll" />
+    <None Include="Resources\GameObjects\ball.json" />
+    <CopyFileToFolders Include="Resources\GameObjects\burst.json">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Resources\GameObjects\end.json">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <None Include="Resources\GameObjects\button.json" />
+    <None Include="Resources\GameObjects\connector.json" />
+    <None Include="Resources\GameObjects\cursor.json" />
+    <None Include="Resources\GameObjects\booper.json" />
+    <CopyFileToFolders Include="Resources\GameObjects\window.json">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <None Include="Resources\GameObjects\missle.json" />
+    <CopyFileToFolders Include="Resources\GameObjects\spikes.json">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Resources\GameObjects\state.json">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Resources\GameObjects\player.json">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Resources\GameObjects\wallh.json">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <None Include="Resources\GameObjects\start.json" />
+    <None Include="Resources\GameObjects\wallv.json" />
+    <None Include="Resources\Level\good-end.csv" />
+    <None Include="Resources\Level\worst-end.csv" />
+    <CopyFileToFolders Include="Config\intro.conf.json">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</DeploymentContent>
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <None Include="Resources\Level\intro.csv" />
+    <None Include="Resources\Level\pause.csv" />
+    <None Include="Resources\Level\level-0-1.csv" />
+    <CopyFileToFolders Include="SDL2.dll">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </CopyFileToFolders>
+    <None Include="Scripts\EnemySpriteScript.lua" />
+    <None Include="Scripts\MovementScript.lua" />
+    <None Include="Scripts\PlayerSpriteScript.lua" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\..\..\Downloads\DigiPenLogos\DigiPenLogo.png" />
+    <Image Include="Debug\Resources\Textures\background.png" />
+    <Image Include="Debug\Resources\Textures\burst.png" />
+    <Image Include="Debug\Resources\Textures\earth.png" />
+    <Image Include="Debug\Resources\Textures\game-clear.png" />
+    <Image Include="Debug\Resources\Textures\game-over.png" />
+    <Image Include="Debug\Resources\Textures\goal.png" />
+    <Image Include="Debug\Resources\Textures\intro.png" />
+    <Image Include="Debug\Resources\Textures\pause.png" />
+    <Image Include="Debug\Resources\Textures\player.png" />
+    <Image Include="Debug\Resources\Textures\shooter.png" />
+    <Image Include="Debug\Resources\Textures\slimy.png" />
+    <Image Include="Debug\Resources\Textures\spikes.png" />
+    <Image Include="Debug\Resources\Textures\wall-sample.png" />
+    <Image Include="icon1.ico" />
+    <Image Include="Modulo.ico" />
+    <Image Include="Resources\Textures\AngryFinalBoss.png" />
+    <Image Include="Resources\Textures\Arrow keys.jpg" />
+    <Image Include="Resources\Textures\BackButton-notused.png" />
+    <Image Include="Resources\Textures\BackButton-used.png" />
+    <Image Include="Resources\Textures\background.png" />
+    <Image Include="Resources\Textures\background1.png" />
+    <Image Include="Resources\Textures\background2.png" />
+    <Image Include="Resources\Textures\background3.png" />
+    <Image Include="Resources\Textures\background4.png" />
+    <Image Include="Resources\Textures\background5.png" />
+    <Image Include="Resources\Textures\BestUseController.png" />
+    <Image Include="Resources\Textures\Body.png" />
+    <Image Include="Resources\Textures\Bottom.png" />
+    <Image Include="Resources\Textures\BottomRight.png" />
+    <Image Include="Resources\Textures\Bullet.png" />
+    <Image Include="Resources\Textures\button1.png" />
+    <Image Include="Resources\Textures\button2.png" />
+    <Image Include="Resources\Textures\button3.png" />
+    <Image Include="Resources\Textures\Checkpoint.png" />
+    <Image Include="Resources\Textures\checkpoint_tutorial.png" />
+    <Image Include="Resources\Textures\circle.png" />
+    <Image Include="Resources\Textures\ControlRoomBackground.png" />
+    <Image Include="Resources\Textures\ControlRoomBackgroundStoryTemplate_Boss.png" />
+    <Image Include="Resources\Textures\ControlRoomBackgroundStoryTemplate_Bossdefeated.png" />
+    <Image Include="Resources\Textures\ControlRoomBackgroundStoryTemplate_hero.png" />
+    <Image Include="Resources\Textures\ControlsButton-notused.png" />
+    <Image Include="Resources\Textures\ControlsButton-used.png" />
+    <Image Include="Resources\Textures\CreditsButton-notused.png" />
+    <Image Include="Resources\Textures\CreditsButton-used.png" />
+    <Image Include="Resources\Textures\cursor.png" />
+    <Image Include="Resources\Textures\dash.png" />
+    <Image Include="Resources\Textures\DashAbility.png" />
+    <Image Include="Resources\Textures\DashController.png" />
+    <Image Include="Resources\Textures\DashLock.png" />
+    <Image Include="Resources\Textures\DashParticle.png" />
+    <Image Include="Resources\Textures\dash_tutorial_control.png" />
+    <Image Include="Resources\Textures\dash_tutorial_key.png" />
+    <Image Include="Resources\Textures\DeadFinalBoss.png" />
+    <Image Include="Resources\Textures\Death_Animation\D_Frame1.png" />
+    <Image Include="Resources\Textures\Death_Animation\D_Frame1half.png" />
+    <Image Include="Resources\Textures\Death_Animation\D_Frame2.png" />
+    <Image Include="Resources\Textures\Death_Animation\D_Frame2half.png" />
+    <Image Include="Resources\Textures\Death_Animation\D_Frame3.png" />
+    <Image Include="Resources\Textures\Death_Animation\D_Frame4.png" />
+    <Image Include="Resources\Textures\Death_Animation\D_Frame5.png" />
+    <Image Include="Resources\Textures\default.png" />
+    <Image Include="Resources\Textures\DigiPenLogo.png" />
+    <Image Include="Resources\Textures\DisplayAfterTeamName.png" />
+    <Image Include="Resources\Textures\dopple.png" />
+    <Image Include="Resources\Textures\DoubleJump.png" />
+    <Image Include="Resources\Textures\DownArrow.png" />
+    <Image Include="Resources\Textures\DownArrowSelected.png" />
+    <Image Include="Resources\Textures\Dust Particle.png" />
+    <Image Include="Resources\Textures\Dust.png" />
+    <Image Include="Resources\Textures\D_Frame1.png" />
+    <Image Include="Resources\Textures\D_Frame2.png" />
+    <Image Include="Resources\Textures\D_Frame3.png" />
+    <Image Include="Resources\Textures\D_Frame4.png" />
+    <Image Include="Resources\Textures\D_Frame5.png" />
+    <Image Include="Resources\Textures\D_Frame6.png" />
+    <Image Include="Resources\Textures\D_Frame7.png" />
+    <Image Include="Resources\Textures\Electric_trap.png" />
+    <Image Include="Resources\Textures\Enemy1.png" />
+    <Image Include="Resources\Textures\EnemyR.png" />
+    <Image Include="Resources\Textures\ExitButton-notused.png" />
+    <Image Include="Resources\Textures\ExitButton-used.png" />
+    <Image Include="Resources\Textures\Face.png" />
+    <Image Include="Resources\Textures\FactoryBackgroundStoryTemplate_hero.png" />
+    <Image Include="Resources\Textures\FactoryBackgroundStoryTemplate_Narrator.png" />
+    <Image Include="Resources\Textures\FloatAbility.png" />
+    <Image Include="Resources\Textures\FloatController.png" />
+    <Image Include="Resources\Textures\FloatLock.png" />
+    <Image Include="Resources\Textures\FMOD Logo Black - White Background.png" />
+    <Image Include="Resources\Textures\FMOD.png" />
+    <Image Include="Resources\Textures\friend_tutorial.png" />
+    <Image Include="Resources\Textures\fullscreennotselected_hovered.png" />
+    <Image Include="Resources\Textures\fullscreennotselected_nothovered.png" />
+    <Image Include="Resources\Textures\fullscreenselected_hovered.png" />
+    <Image Include="Resources\Textures\fullscreenselected_nothovered.png" />
+    <Image Include="Resources\Textures\Game-Cleared.png" />
+    <Image Include="Resources\Textures\GameCredits_01.png" />
+    <Image Include="Resources\Textures\GameCredits_02.png" />
+    <Image Include="Resources\Textures\GameCredits_03.png" />
+    <Image Include="Resources\Textures\GameCredits_04.png" />
+    <Image Include="Resources\Textures\GameCredits_05.png" />
+    <Image Include="Resources\Textures\GameCredits_06.png" />
+    <Image Include="Resources\Textures\GameCredits_07.png" />
+    <Image Include="Resources\Textures\GameCredits_08.png" />
+    <Image Include="Resources\Textures\goal_tutorial.png" />
+    <Image Include="Resources\Textures\Howtoplay.png" />
+    <Image Include="Resources\Textures\jump_tutorial_control.png" />
+    <Image Include="Resources\Textures\jump_tutorial_key.png" />
+    <Image Include="Resources\Textures\LeftArrow.png" />
+    <Image Include="Resources\Textures\life_tutorial.png" />
+    <Image Include="Resources\Textures\Masternotselected_hovered.png" />
+    <Image Include="Resources\Textures\Masternotselected_nothovered.png" />
+    <Image Include="Resources\Textures\Masterselected_hovered.png" />
+    <Image Include="Resources\Textures\Masterselected_nothovered.png" />
+    <Image Include="Resources\Textures\MasterTexture.png" />
+    <Image Include="Resources\Textures\MasterTexture0.png" />
+    <Image Include="Resources\Textures\MasterTexture1.png" />
+    <Image Include="Resources\Textures\MasterTexture10.png" />
+    <Image Include="Resources\Textures\MasterTexture2.png" />
+    <Image Include="Resources\Textures\MasterTexture3.png" />
+    <Image Include="Resources\Textures\MasterTexture4.png" />
+    <Image Include="Resources\Textures\MasterTexture5.png" />
+    <Image Include="Resources\Textures\MasterTexture6.png" />
+    <Image Include="Resources\Textures\MasterTexture7.png" />
+    <Image Include="Resources\Textures\MasterTexture8.png" />
+    <Image Include="Resources\Textures\MasterTexture9.png" />
+    <Image Include="Resources\Textures\move_tutorial_control.png" />
+    <Image Include="Resources\Textures\move_tutorial_key.png" />
+    <Image Include="Resources\Textures\MusicNotselected_hovered.png" />
+    <Image Include="Resources\Textures\MusicNotselected_nothovered.png" />
+    <Image Include="Resources\Textures\Musicselected_hovered.png" />
+    <Image Include="Resources\Textures\Musicselected_nothovered.png" />
+    <Image Include="Resources\Textures\MusicTexture.png" />
+    <Image Include="Resources\Textures\MusicTexture0.png" />
+    <Image Include="Resources\Textures\MusicTexture1.png" />
+    <Image Include="Resources\Textures\MusicTexture10.png" />
+    <Image Include="Resources\Textures\MusicTexture2.png" />
+    <Image Include="Resources\Textures\MusicTexture3.png" />
+    <Image Include="Resources\Textures\MusicTexture4.png" />
+    <Image Include="Resources\Textures\MusicTexture5.png" />
+    <Image Include="Resources\Textures\MusicTexture6.png" />
+    <Image Include="Resources\Textures\MusicTexture7.png" />
+    <Image Include="Resources\Textures\MusicTexture8.png" />
+    <Image Include="Resources\Textures\MusicTexture9.png" />
+    <Image Include="Resources\Textures\NextButton-notused.png" />
+    <Image Include="Resources\Textures\NextButton-used.png" />
+    <Image Include="Resources\Textures\NoButton-notused.png" />
+    <Image Include="Resources\Textures\NoButton-used.png" />
+    <Image Include="Resources\Textures\Noobsaved1.png" />
+    <Image Include="Resources\Textures\Noobsaved2.png" />
+    <Image Include="Resources\Textures\Noobsaved3.png" />
+    <Image Include="Resources\Textures\Noobsaved4.png" />
+    <Image Include="Resources\Textures\Noobsaved5.png" />
+    <Image Include="Resources\Textures\Noobsaved6.png" />
+    <Image Include="Resources\Textures\Open.png" />
+    <Image Include="Resources\Textures\PauseMenuBackground.png" />
+    <Image Include="Resources\Textures\ResumeButton-notused.png" />
+    <Image Include="Resources\Textures\ResumeButton-used.png" />
+    <Image Include="Resources\Textures\RightArrow.png" />
+    <Image Include="Resources\Textures\Settingsword.png" />
+    <Image Include="Resources\Textures\SFXnotselected_hovered.png" />
+    <Image Include="Resources\Textures\SFXnotselected_nothovered.png" />
+    <Image Include="Resources\Textures\SFXselected_hovered.png" />
+    <Image Include="Resources\Textures\SFXselected_nothovered.png" />
+    <Image Include="Resources\Textures\SFXTexture.png" />
+    <Image Include="Resources\Textures\SFXTexture0.png" />
+    <Image Include="Resources\Textures\SFXTexture1.png" />
+    <Image Include="Resources\Textures\SFXTexture10.png" />
+    <Image Include="Resources\Textures\SFXTexture2.png" />
+    <Image Include="Resources\Textures\SFXTexture3.png" />
+    <Image Include="Resources\Textures\SFXTexture4.png" />
+    <Image Include="Resources\Textures\SFXTexture5.png" />
+    <Image Include="Resources\Textures\SFXTexture6.png" />
+    <Image Include="Resources\Textures\SFXTexture7.png" />
+    <Image Include="Resources\Textures\SFXTexture8.png" />
+    <Image Include="Resources\Textures\SFXTexture9.png" />
+    <Image Include="Resources\Textures\Slide1.png" />
+    <Image Include="Resources\Textures\Slide2.png" />
+    <Image Include="Resources\Textures\Slide3.png" />
+    <Image Include="Resources\Textures\Slide4.png" />
+    <Image Include="Resources\Textures\Slide5.png" />
+    <Image Include="Resources\Textures\Slide6.png" />
+    <Image Include="Resources\Textures\Slide7.png" />
+    <Image Include="Resources\Textures\Slide8.png" />
+    <Image Include="Resources\Textures\GameOver.png" />
+    <Image Include="Resources\Textures\goal.png" />
+    <Image Include="Resources\Textures\image7105.png" />
+    <Image Include="Resources\Textures\JumpAnimation.png" />
+    <Image Include="Resources\Textures\JumpController.png" />
+    <Image Include="Resources\Textures\JumpLeft.png" />
+    <Image Include="Resources\Textures\JumpLock.png" />
+    <Image Include="Resources\Textures\JumpRight.png" />
+    <Image Include="Resources\Textures\LevelClear.png" />
+    <Image Include="Resources\Textures\life.png" />
+    <Image Include="Resources\Textures\Lightning.png" />
+    <Image Include="Resources\Textures\Loading.png" />
+    <Image Include="Resources\Textures\Machine.png" />
+    <Image Include="Resources\Textures\NarrativeBackgound.png" />
+    <Image Include="Resources\Textures\NoobBeforesaved.png" />
+    <Image Include="Resources\Textures\Noobsaved.png" />
+    <Image Include="Resources\Textures\OutsideBackground.png" />
+    <Image Include="Resources\Textures\OutsideBackgroundStoryTemplate_hero.png" />
+    <Image Include="Resources\Textures\OutsideBackgroundStoryTemplate_narrator.png" />
+    <Image Include="Resources\Textures\pause.png" />
+    <Image Include="Resources\Textures\PauseButtonController.png" />
+    <Image Include="Resources\Textures\PauseController.png" />
+    <Image Include="Resources\Textures\Pipe.png" />
+    <Image Include="Resources\Textures\PipeV.png" />
+    <Image Include="Resources\Textures\Pipe_connecting.png" />
+    <Image Include="Resources\Textures\ProtectAbility.png" />
+    <Image Include="Resources\Textures\Protectlock.png" />
+    <Image Include="Resources\Textures\RandomParticle.png" />
+    <Image Include="Resources\Textures\Robot.png" />
+    <Image Include="Resources\Textures\Robot12.png" />
+    <Image Include="Resources\Textures\Robot2.png" />
+    <Image Include="Resources\Textures\Robot3.png" />
+    <Image Include="Resources\Textures\Robot4.png" />
+    <Image Include="Resources\Textures\Robot5.png" />
+    <Image Include="Resources\Textures\Robothand.png" />
+    <Image Include="Resources\Textures\RobotLeft.png" />
+    <Image Include="Resources\Textures\RobotRight.png" />
+    <Image Include="Resources\Textures\RobotStill.png" />
+    <Image Include="Resources\Textures\rocket.png" />
+    <Image Include="Resources\Textures\ScrapyBackgroundStoryTemplate_hero.png" />
+    <Image Include="Resources\Textures\ScrapyBackgroundStoryTemplate_narrator.png" />
+    <Image Include="Resources\Textures\ScrapyYard.png" />
+    <Image Include="Resources\Textures\SettingButton-notused.png" />
+    <Image Include="Resources\Textures\SettingButton-used.png" />
+    <Image Include="Resources\Textures\shooter.png" />
+    <Image Include="Resources\Textures\slimy.png" />
+    <Image Include="Resources\Textures\spikes.png" />
+    <Image Include="Resources\Textures\SpiralParticle.png" />
+    <Image Include="Resources\Textures\Starparticle.png" />
+    <Image Include="Resources\Textures\StartBackground.png" />
+    <Image Include="Resources\Textures\StartButton-notused.png" />
+    <Image Include="Resources\Textures\StartButton-used.png" />
+    <Image Include="Resources\Textures\StartScreen.png" />
+    <Image Include="Resources\Textures\StompAbility.png" />
+    <Image Include="Resources\Textures\StompAnimation.png" />
+    <Image Include="Resources\Textures\StompLock.png" />
+    <Image Include="Resources\Textures\Teamintro.png" />
+    <Image Include="Resources\Textures\ToBeContinued.png" />
+    <Image Include="Resources\Textures\unlock2_tutorial_control.png" />
+    <Image Include="Resources\Textures\unlock2_tutorial_key.png" />
+    <Image Include="Resources\Textures\unlockController.png" />
+    <Image Include="Resources\Textures\unlock_tutorial_control.png" />
+    <Image Include="Resources\Textures\unlock_tutorial_key.png" />
+    <Image Include="Resources\Textures\UpArrow.png" />
+    <Image Include="Resources\Textures\UpArrowselected.png" />
+    <Image Include="Resources\Textures\Victory.png" />
+    <Image Include="Resources\Textures\victory1.png" />
+    <Image Include="Resources\Textures\victory1.png.png" />
+    <Image Include="Resources\Textures\wall-sample.png" />
+    <Image Include="Resources\Textures\wall1.png" />
+    <Image Include="Resources\Textures\wall2.png" />
+    <Image Include="Resources\Textures\YesButton-notused.png" />
+    <Image Include="Resources\Textures\YesButton-used.png" />
+    <Image Include="Resources\Textures\YesNoBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="freetype.lib" />
+    <Library Include="lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\lib\fmodstudio64_vc.lib" />
+    <Library Include="lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\lib\fmodstudioL64_vc.lib" />
+    <Library Include="lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\lib\fmodstudioL_vc.lib" />
+    <Library Include="lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\lib\fmodstudio_vc.lib" />
+    <Library Include="lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\lib\libfmodstudio.a" />
+    <Library Include="lib\FMOD SoundSystem\FMOD Studio API Windows\api\studio\lib\libfmodstudioL.a" />
+    <Library Include="lib\glfw3.lib" />
+    <Library Include="lib\x64\SDL2.lib" />
+    <Library Include="lib\x64\SDL2main.lib" />
+    <Library Include="lib\x64\SDL2test.lib" />
+    <Library Include="lib\x86\SDL2.lib" />
+    <Library Include="lib\x86\SDL2main.lib" />
+    <Library Include="lib\x86\SDL2test.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Final Project Notes 529\Art Credits.txt" />
+    <CopyFileToFolders Include="Resources\GameObjects\shooter.json">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <Text Include="Resources\Narrative\act-1.txt" />
+    <Text Include="Resources\Narrative\act-2.txt" />
+    <Text Include="Resources\Narrative\act-3.txt" />
+    <Text Include="Resources\Narrative\act-bad-end.txt" />
+    <Text Include="Resources\Narrative\act-best-end.txt" />
+    <Text Include="Resources\Narrative\act-final.txt" />
+    <Text Include="Resources\Narrative\act-worst-end.txt" />
+    <Text Include="Resources\Narrative\prologue.txt" />
+    <Text Include="Resources\Narrative\sample.txt" />
+    <Text Include="Scripts\SampleScene.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Debug\Resources\Audio\breakout.mp3" />
+    <Media Include="Resources\Audio\chill-cutscene.wav" />
+    <Media Include="Resources\Audio\factory-music.wav" />
+    <Media Include="Resources\Audio\final-level.wav" />
+    <Media Include="Resources\Audio\intro-music.wav" />
+    <Media Include="Resources\Audio\jump.wav" />
+    <Media Include="Resources\Audio\level-0.wav" />
+    <Media Include="Resources\Audio\onward.wav" />
+    <Media Include="Resources\Audio\save.wav" />
+    <Media Include="Resources\Audio\victory.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\..\..\..\..\..\Downloads\Arima_Madurai\ArimaMadurai-Black.ttf" />
+    <Font Include="..\..\..\..\..\..\..\Downloads\good-times\good times rg.ttf" />
+    <Font Include="Resources\Font\ArimaMadurai-Black.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Game Engine.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

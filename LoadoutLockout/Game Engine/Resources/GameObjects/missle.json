@@ -1,0 +1,22 @@
+{
+  "sprite": {
+    "texture": "rocket.png"
+  },
+  "bullet": { "rotate": false},
+  "damage": { "damage": 5 },
+  "transform": {
+    "x": 0,
+    "y": 0,
+    "scaleX": 10.0,
+    "scaleY": 35.0
+  },
+  "body": {
+    "mass": 1,
+    "shape": "rect",
+    "width": 15,
+    "height": 35,
+    "ridged": false,
+    "movable": true,
+    "subscribe": false
+  }
+}

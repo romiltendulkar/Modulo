@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9AD7F407-7E41-4D2C-BFEC-A3A707437956}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameEngine1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib;$(ProjectDir)lib\x86;$(ProjectDir)lib\Win32;$(ProjectDir)lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2test.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;OpenGL32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\x86;$(ProjectDir)lib\Win32;$(ProjectDir)lib\x64;$(ProjectDir)lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2test.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BasicEngine\Components\Ball.cpp" />
+    <ClCompile Include="BasicEngine\Components\Body.cpp" />
+    <ClCompile Include="BasicEngine\Components\Controller.cpp" />
+    <ClCompile Include="BasicEngine\Managers\FrameRate_Controller.cpp" />
+    <ClCompile Include="BasicEngine\GameEngine.cpp" />
+    <ClCompile Include="BasicEngine\GameObject.cpp" />
+    <ClCompile Include="BasicEngine\GameObjectFactory.cpp" />
+    <ClCompile Include="BasicEngine\Managers\GameObject_Manager.cpp" />
+    <ClCompile Include="BasicEngine\Graphics\GraphicsManager.cpp" />
+    <ClCompile Include="BasicEngine\Managers\Input_Manager.cpp" />
+    <ClCompile Include="BasicEngine\Events\Event.cpp" />
+    <ClCompile Include="BasicEngine\Managers\EventManager.cpp" />
+    <ClCompile Include="BasicEngine\Events\CollisionEvent.cpp" />
+    <ClCompile Include="BasicEngine\Components\FireMissle.cpp" />
+    <ClCompile Include="BasicEngine\Managers\GameStateManager.cpp" />
+    <ClCompile Include="BasicEngine\Components\LevelState.cpp" />
+    <ClCompile Include="BasicEngine\Components\Damage.cpp" />
+    <ClCompile Include="BasicEngine\Components\Health.cpp" />
+    <ClCompile Include="BasicEngine\Events\DestroyEvent.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Math\LineSegment2D.c" />
+    <ClCompile Include="Math\Math2D.c" />
+    <ClCompile Include="Math\Matrix2D.c" />
+    <ClCompile Include="BasicEngine\Managers\Physics_Manager.cpp" />
+    <ClCompile Include="BasicEngine\Managers\Resource_Manager.cpp" />
+    <ClCompile Include="BasicEngine\Components\Sprite.cpp" />
+    <ClCompile Include="BasicEngine\Components\Transform.cpp" />
+    <ClCompile Include="BasicEngine\Components\UpDown.cpp" />
+    <ClCompile Include="BasicEngine\Managers\CollisionManager.cpp" />
+    <ClCompile Include="BasicEngine\Graphics\Texture.cpp" />
+    <ClCompile Include="BasicEngine\Events\MoveEvent.cpp" />
+    <ClCompile Include="BasicEngine\Events\PauseEvent.cpp" />
+    <ClCompile Include="BasicEngine\Events\TimedEvent.cpp" />
+    <ClCompile Include="Math\Vector2D.c" />
+    <ClCompile Include="BasicEngine\Graphics\Shader.cpp" />
+    <ClCompile Include="BasicEngine\Events\ReleaseEvent.cpp" />
+    <ClCompile Include="BasicEngine\Events\ResetBallEvent.cpp" />
+    <ClCompile Include="src\glad.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BasicEngine\ComponentCreator.h" />
+    <ClInclude Include="BasicEngine\Components\Ball.h" />
+    <ClInclude Include="BasicEngine\Components\Body.h" />
+    <ClInclude Include="BasicEngine\Components\Component.h" />
+    <ClInclude Include="BasicEngine\Components\Controller.h" />
+    <ClInclude Include="BasicEngine\Components\definitions.h" />
+    <ClInclude Include="BasicEngine\Managers\FrameRate_Controller.h" />
+    <ClInclude Include="BasicEngine\GameEngine.h" />
+    <ClInclude Include="BasicEngine\GameObject.h" />
+    <ClInclude Include="BasicEngine\GameObjectFactory.h" />
+    <ClInclude Include="BasicEngine\Managers\GameObject_Manager.h" />
+    <ClInclude Include="BasicEngine\Graphics\GraphicsManager.h" />
+    <ClInclude Include="BasicEngine\Events\Event.h" />
+    <ClInclude Include="BasicEngine\Managers\EventManager.h" />
+    <ClInclude Include="BasicEngine\Events\CollisionEvent.h" />
+    <ClInclude Include="BasicEngine\Components\FireMissle.h" />
+    <ClInclude Include="BasicEngine\Managers\GameStateManager.h" />
+    <ClInclude Include="BasicEngine\Components\Damage.h" />
+    <ClInclude Include="BasicEngine\Components\Health.h" />
+    <ClInclude Include="BasicEngine\Events\DestroyEvent.h" />
+    <ClInclude Include="Include\rapidjson\allocators.h" />
+    <ClInclude Include="Include\rapidjson\cursorstreamwrapper.h" />
+    <ClInclude Include="Include\rapidjson\document.h" />
+    <ClInclude Include="Include\rapidjson\encodedstream.h" />
+    <ClInclude Include="Include\rapidjson\encodings.h" />
+    <ClInclude Include="Include\rapidjson\filereadstream.h" />
+    <ClInclude Include="Include\rapidjson\filewritestream.h" />
+    <ClInclude Include="Include\rapidjson\fwd.h" />
+    <ClInclude Include="Include\rapidjson\istreamwrapper.h" />
+    <ClInclude Include="Include\rapidjson\memorybuffer.h" />
+    <ClInclude Include="Include\rapidjson\memorystream.h" />
+    <ClInclude Include="Include\rapidjson\ostreamwrapper.h" />
+    <ClInclude Include="Include\rapidjson\pointer.h" />
+    <ClInclude Include="Include\rapidjson\prettywriter.h" />
+    <ClInclude Include="Include\rapidjson\rapidjson.h" />
+    <ClInclude Include="Include\rapidjson\reader.h" />
+    <ClInclude Include="Include\rapidjson\schema.h" />
+    <ClInclude Include="Include\rapidjson\stream.h" />
+    <ClInclude Include="Include\rapidjson\stringbuffer.h" />
+    <ClInclude Include="Include\rapidjson\writer.h" />
+    <ClInclude Include="BasicEngine\Managers\Input_Manager.h" />
+    <ClInclude Include="Include\STB\stb_image.h" />
+    <ClInclude Include="BasicEngine\Components\LevelState.h" />
+    <ClInclude Include="Math\LineSegment2D.h" />
+    <ClInclude Include="Math\Math2D.h" />
+    <ClInclude Include="Math\Matrix2D.h" />
+    <ClInclude Include="BasicEngine\Managers\Physics_Manager.h" />
+    <ClInclude Include="BasicEngine\Managers\Resource_Manager.h" />
+    <ClInclude Include="BasicEngine\Components\Sprite.h" />
+    <ClInclude Include="BasicEngine\Components\Transform.h" />
+    <ClInclude Include="BasicEngine\Components\UpDown.h" />
+    <ClInclude Include="BasicEngine\Managers\CollisionManager.h" />
+    <ClInclude Include="BasicEngine\Graphics\Texture.h" />
+    <ClInclude Include="BasicEngine\Events\MoveEvent.h" />
+    <ClInclude Include="BasicEngine\Events\PauseEvent.h" />
+    <ClInclude Include="BasicEngine\Events\TimedEvent.h" />
+    <ClInclude Include="Math\Vector2D.h" />
+    <ClInclude Include="BasicEngine\Graphics\Shader.h" />
+    <ClInclude Include="BasicEngine\Events\ReleaseEvent.h" />
+    <ClInclude Include="BasicEngine\Events\ResetBallEvent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Downloads\Milestone1\Milestone1\Game Engine\SDL2.dll" />
+    <None Include="BasicEngine\Graphics\Shaders\texture.f_s" />
+    <None Include="lib\x64\SDL2.dll" />
+    <None Include="lib\x86\SDL2.dll" />
+    <None Include="Resources\GameObjects\ball.json" />
+    <None Include="Resources\GameObjects\enemy_1.json" />
+    <None Include="Resources\GameObjects\player.json" />
+    <None Include="Resources\Level\level0.json" />
+    <None Include="Resources\Level\level1.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Textures\alien1.png" />
+    <Image Include="Resources\Textures\alien2.png" />
+    <Image Include="Resources\Textures\ball.png" />
+    <Image Include="Resources\Textures\earth.png" />
+    <Image Include="Resources\Textures\player.png" />
+    <Image Include="Resources\Textures\rocket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\glfw3.lib" />
+    <Library Include="lib\x64\SDL2.lib" />
+    <Library Include="lib\x64\SDL2main.lib" />
+    <Library Include="lib\x64\SDL2test.lib" />
+    <Library Include="lib\x86\SDL2.lib" />
+    <Library Include="lib\x86\SDL2main.lib" />
+    <Library Include="lib\x86\SDL2test.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="BasicEngine\Graphics\Shaders\texture.v_s" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

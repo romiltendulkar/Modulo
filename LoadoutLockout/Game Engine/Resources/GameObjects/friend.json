@@ -1,0 +1,25 @@
+{
+  "type": 16,
+  "sprite": {
+    "texture": "NoobBeforesaved.png",
+    "animated": false
+  },
+  "transform": {
+    "x": 0,
+    "y": 0,
+    "scaleX": 20.0,
+    "scaleY": 20.0
+  },
+  "body": {
+    "mass": 50,
+    "shape": "rect",
+    "width": 20,
+    "height": 20,
+    "ridged": false,
+    "movable": false
+  },
+  "friend": { "saved": "Noobsaved.png"},
+  "audio": {
+    "audio": "save.wav"
+  }
+}

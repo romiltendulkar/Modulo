@@ -1,0 +1,17 @@
+ControlRoom
+Enemy
+Say
+ Nooooooooooooo!!!
+Player
+Say
+ Yeeeeaaahhhhh!!!
+Player
+Say
+ I stopped RTS!!!
+Narration
+Say
+ With all its friends saved
+Narration
+Say
+ Modulo, the hero, saved the day.
+End

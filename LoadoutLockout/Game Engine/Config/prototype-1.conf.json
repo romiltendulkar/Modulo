@@ -1,0 +1,45 @@
+{
+  "background": "ScrapyYard.png",
+  "match-window": false,
+  "grid_size": 50,
+  "cam-type": "full",
+  "music": "breakout.mp3",
+  "bindings": {
+    "P": {
+      "file": "player.json"
+    },
+    "*": {
+      "file": "booper.json"
+    },
+    "|": {
+      "file": "wallv.json"
+    },
+    "-": {
+      "file": "wallh.json"
+    },
+    "#": {
+      "file": "connector.json"
+    },
+    "^": {
+      "file": "spikes.json"
+      
+    },
+    "@": {
+      "file": "state.json"
+    },
+    "$": {
+      "file": "start.json"
+    },
+    "s": {
+      "file": "shooter.json"
+    },
+    "S": {
+      "file": "shooter.json",
+      "overrides": {
+        "fire-missle": {
+          "init_delay": 250
+        }
+      }
+    }
+  }
+}

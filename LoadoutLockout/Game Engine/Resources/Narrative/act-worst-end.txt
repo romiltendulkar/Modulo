@@ -1,0 +1,26 @@
+ControlRoom
+Player
+Say
+ Yeeeeaaahhhhh!!!
+Player
+Say
+ I stopped RTS!
+Narration
+Say
+ But....Did he?
+Player
+Say
+ Whats happening?!?!
+Player
+Say
+ Nooooooooo!!!
+Enemy
+Says
+ I, Modulo, am RTS now.
+Narration
+Say
+ Next time save your friends.
+Narration
+Say
+ And be the hero.
+End

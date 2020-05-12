@@ -1,0 +1,156 @@
+{
+  "background": "OutsideBackground.png",
+  "music": "level-0.wav",
+  "cam-type": "full",
+  "match-window": false,
+  "grid_size": 50,
+  "bindings": {
+    "P": {
+      "file": "player.json",
+      "overrides": {
+        "player": {
+          "preset_abilities": false
+        },
+        "transform": {
+          "scaleX": 45.0,
+          "scaleY": 45.0
+        },
+        "body": {
+          "shape": "rect",
+          "width": 24,
+          "height": 45,
+          "match": false
+        }
+      }
+    },
+    "a1": {
+      "file": "ability-node.json",
+      "overrides": {
+        "ability-node": {
+          "ability": "double"
+        },
+        "sprite": {
+          "texture": "DoubleJump.png"
+        }
+      }
+    },
+    "c1": {
+      "file": "cage.json",
+      "overrides": {
+        "cage": {
+          "key": "double"
+        },
+        "sprite": {
+          "texture": "JumpLock.png"
+        }
+      }
+    },
+    "a2": {
+      "file": "ability-node.json",
+      "overrides": {
+        "ability-node": {
+          "ability": "dash"
+        },
+        "sprite": {
+          "texture": "DashAbility.png"
+        }
+      }
+    },
+    "c2": {
+      "file": "cage.json",
+      "overrides": {
+        "cage": {
+          "key": "dash"
+        },
+        "sprite": {
+          "texture": "DashLock.png"
+        }
+      }
+    },
+    "|": {
+      "file": "wallv.json"
+    },
+    "-": {
+      "file": "wallh.json"
+    },
+    "#": {
+      "file": "connector.json"
+    },
+    "^": {
+      "file": "spikes.json",
+      "overrides": {
+        "transform": {
+          "scaleX": 45.0,
+          "scaleY": 45.0
+        }
+      }
+    },
+    "*": {
+      "file": "booper.json",
+      "overrides": {
+        "transform": {
+          "scaleX": 45.0,
+          "scaleY": 45.0
+        },
+        "body": {
+          "shape": "rect",
+          "width": 35,
+          "height": 45,
+          "match": false
+        }
+      }
+    },
+    "@": {
+      "file": "state.json"
+    },
+    "$": {
+      "file": "start.json"
+    },
+    "s": {
+      "file": "shooter.json"
+    },
+    "h": {
+      "file": "friend.json"
+    },
+    "S": {
+      "file": "shooter.json",
+      "overrides": {
+        "fire-missle": {
+          "init_delay": 250
+        }
+      }
+    },
+    "6": {
+      "file": "tutorial.json",
+      "overrides": {
+        "tutorial": {
+          "keyboard": "unlock2_tutorial_key.png",
+          "controller": "unlock2_tutorial_control.png"
+        },
+        "sprite": {
+          "texture": "unlock2_tutorial_key.png"
+        },
+        "transform": {
+          "scaleX": 100.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "7": {
+      "file": "tutorial.json",
+      "overrides": {
+        "tutorial": {
+          "keyboard": "dash_tutorial_key.png",
+          "controller": "dash_tutorial_control.png"
+        },
+        "sprite": {
+          "texture": "dash_tutorial_key.png"
+        },
+        "transform": {
+          "scaleX": 100.0,
+          "scaleY": 50.0
+        }
+      }
+    }
+  }
+}

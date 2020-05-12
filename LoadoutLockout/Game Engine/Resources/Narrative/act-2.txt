@@ -1,0 +1,11 @@
+Factory
+Narration
+Say
+In search for his friends...
+Narration
+Say
+Modulo decided to investigate RTS
+Player
+Say
+Maybe I can find out what happened.
+End

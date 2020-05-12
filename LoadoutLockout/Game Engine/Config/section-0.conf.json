@@ -1,0 +1,252 @@
+{
+  "background": "ScrapyYard.png",
+  "music": "chill-cutscene.wav",
+  "cam-type": "full",
+  "match-window": false,
+  "grid_size": 50,
+  "bindings": {
+    "P": {
+      "file": "player.json",
+      "overrides": {
+        "player": {
+          "preset_abilities": false
+        },
+        "transform": {
+          "scaleX": 45.0,
+          "scaleY": 45.0
+        },
+        "body": {
+          "shape": "rect",
+          "width": 24,
+          "height": 45,
+          "match": false
+        }
+      }
+    },
+    "a1": {
+      "file": "ability-node.json",
+      "overrides": {
+        "ability-node": {
+          "ability": "double"
+        },
+        "sprite": {
+          "texture": "DoubleJump.png"
+        }
+      }
+    },
+    "c1": {
+      "file": "cage.json",
+      "overrides": {
+        "cage": {
+          "key": "double"
+        },
+        "sprite": {
+          "texture": "JumpLock.png"
+        }
+      }
+    },
+    "a2": {
+      "file": "ability-node.json",
+      "overrides": {
+        "ability-node": {
+          "ability": "dash"
+        },
+        "sprite": {
+          "texture": "DashAbility.png"
+        }
+      }
+    },
+    "c2": {
+      "file": "cage.json",
+      "overrides": {
+        "cage": {
+          "key": "dash"
+        },
+        "sprite": {
+          "texture": "DashLock.png"
+        }
+      }
+    },
+    "|": {
+      "file": "wallv.json"
+    },
+    "-": {
+      "file": "wallh.json"
+    },
+    "#": {
+      "file": "connector.json"
+    },
+    "^": {
+      "file": "spikes.json",
+      "overrides": {
+        "transform": {
+          "scaleX": 50.0,
+          "scaleY": 40.0
+        }
+      }
+    },
+    "@": {
+      "file": "state.json"
+    },
+    "$": {
+      "file": "start.json"
+    },
+    "s": {
+      "file": "shooter.json"
+    },
+    "h": {
+      "file": "friend.json"
+    },
+    "S": {
+      "file": "shooter.json",
+      "overrides": {
+        "fire-missle": {
+          "init_delay": 250
+        }
+      }
+    },
+    "*": {
+      "file": "booper.json",
+      "overrides": {
+          "transform": {
+            "scaleX": 45.0,
+            "scaleY": 45.0
+          },
+          "body": {
+            "shape": "rect",
+            "width": 35,
+            "height": 45,
+            "match": false
+          }
+        }
+    },
+    "0": {
+      "file": "tutorial.json",
+      "overrides": {
+        "tutorial": {
+          "keyboard": "move_tutorial_key.png",
+          "controller": "move_tutorial_control.png"
+        },
+        "sprite": {
+          "texture": "move_tutorial_key.png"
+        },
+        "transform": {
+          "scaleX": 100.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "1": {
+      "file": "tutorial.json",
+      "overrides": {
+        "tutorial": {
+          "keyboard": "goal_tutorial.png",
+          "controller": "goal_tutorial.png"
+        },
+        "sprite": {
+          "texture": "goal_tutorial.png"
+        },
+        "transform": {
+          "scaleX": 100.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "2": {
+      "file": "tutorial.json",
+      "overrides": {
+        "tutorial": {
+          "keyboard": "jump_tutorial_key.png",
+          "controller": "jump_tutorial_control.png"
+        },
+        "sprite": {
+          "texture": "jump_tutorial_key.png"
+        },
+        "transform": {
+          "scaleX": 50.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "3": {
+      "file": "tutorial.json",
+      "overrides": {
+        "tutorial": {
+          "keyboard": "checkpoint_tutorial.png",
+          "controller": "checkpoint_tutorial.png"
+        },
+        "sprite": {
+          "texture": "checkpoint_tutorial.png"
+        },
+        "transform": {
+          "scaleX": 100.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "4": {
+      "file": "tutorial.json",
+      "overrides": {
+        "tutorial": {
+          "keyboard": "friend_tutorial.png",
+          "controller": "friend_tutorial.png"
+        },
+        "sprite": {
+          "texture": "friend_tutorial.png"
+        },
+        "transform": {
+          "scaleX": 100.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "5": {
+      "file": "tutorial.json",
+      "overrides": {
+        "tutorial": {
+          "keyboard": "life_tutorial.png",
+          "controller": "life_tutorial.png"
+        },
+        "sprite": {
+          "texture": "move_tutorial_key.png"
+        },
+        "transform": {
+          "scaleX": 100.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "6": {
+      "file": "tutorial.json",
+      "overrides": {
+        "tutorial": {
+          "keyboard": "unlock2_tutorial_key.png",
+          "controller": "unlock2_tutorial_control.png"
+        },
+        "sprite": {
+          "texture": "unlock2_tutorial_key.png"
+        },
+        "transform": {
+          "scaleX": 100.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "7": {
+      "file": "tutorial.json",
+      "overrides": {
+        "tutorial": {
+          "keyboard": "unlock_tutorial_key.png",
+          "controller": "unlock_tutorial_control.png"
+        },
+        "sprite": {
+          "texture": "unlock_tutorial_key.png"
+        },
+        "transform": {
+          "scaleX": 100.0,
+          "scaleY": 50.0
+        }
+      }
+    }
+  }
+}

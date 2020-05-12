@@ -1,0 +1,56 @@
+{
+  "0": {
+    "button": "window.json",
+    "overrides": {
+      "sprite": {
+        "texture": "YesNoBackground.png"
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "scaleX": 350.0,
+        "scaleY": 235.0
+      }
+    }
+  },
+  "1": {
+    "button": "button.json",
+    "overrides": {
+      "button": {
+        "id": 2,
+        "level": "yes",
+        "n_selected": "YesButton-notused.png",
+        "selected": "YesButton-used.png"
+      },
+      "sprite": {
+        "texture": "YesButton-notused.png"
+      },
+      "transform": {
+        "x": 90,
+        "y": -25,
+        "scaleX": 120.0,
+        "scaleY": 90.0
+      }
+    }
+  },
+  "2": {
+    "button": "button.json",
+    "overrides": {
+      "button": {
+        "id": 2,
+        "level": "no",
+        "n_selected": "NoButton-notused.png",
+        "selected": "NoButton-used.png"
+      },
+      "sprite": {
+        "texture": "NoButton-notused.png"
+      },
+      "transform": {
+        "x": -90,
+        "y": -25,
+        "scaleX": 120.0,
+        "scaleY": 90.0
+      }
+    }
+  }
+}

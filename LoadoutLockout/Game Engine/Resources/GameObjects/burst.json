@@ -1,0 +1,21 @@
+{
+  "type": 5,
+  "sprite": {
+    "texture": "Bullet.png"
+  },
+  "bullet": { "rotate": false },
+  "transform": {
+    "x": 0,
+    "y": 0,
+    "scaleX": 20.0,
+    "scaleY": 20.0
+  },
+  "body": {
+    "mass": 5,
+    "shape": "circle",
+    "radius": 5,
+    "ridged": false,
+    "movable": true,
+    "physics": false
+  }
+}

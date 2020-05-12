@@ -1,0 +1,82 @@
+{
+  "A": {
+    "file": "button.json",
+    "overrides": {
+      "button": {
+        "id": 1,
+        "level": "level-0-0.csv",
+        "selected": "StartButton-used.png",
+        "n_selected": "StartButton-notused.png"
+      },
+      "sprite": {
+        "texture": "StartButton-notused.png"
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "scaleX": 45.0,
+        "scaleY": 90.0
+      }
+    }
+  },
+  "B": {
+    "file": "button.json",
+    "overrides": {
+      "button": {
+        "id": 2,
+        "level": "controls.csv",
+        "n_selected": "ControlsButton-used.png",
+        "selected": "ControlsButton-notused.png"
+      },
+      "sprite": {
+        "texture": "ControlsButton-used.png"
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "scaleX": 45.0,
+        "scaleY": 90.0
+      }
+    }
+  },
+  "C": {
+    "file": "button.json",
+    "overrides": {
+      "button": {
+        "id": 3,
+        "level": "settings.csv",
+        "selected": "SettingButton-used.png",
+        "n_selected": "SettingButton-notused.png"
+      },
+      "sprite": {
+        "texture": "SettingButton-notused.png"
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "scaleX": 45.0,
+        "scaleY": 90.0
+      }
+    }
+  },
+  "E": {
+    "file": "button.json",
+    "overrides": {
+      "button": {
+        "id": 5,
+        "level": "quit",
+        "n_selected": "ExitButton-used.png",
+        "selected": "ExitButton-notused.png"
+      },
+      "sprite": {
+        "texture": "ExitButton-used.png"
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "scaleX": 45.0,
+        "scaleY": 90.0
+      }
+    }
+  }
+}

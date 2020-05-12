@@ -1,0 +1,29 @@
+Scrapyard
+Narration
+Say
+Modulo was alone...
+Narration
+Say
+What was last thing it remembered?
+Player
+Say
+That's right.. 
+Player
+Say
+I was not compatible...
+Player
+Say
+not compatible with RTS
+Player
+Say
+the Random Terrain Solver
+Player
+Say
+and it took over my friends!
+Player
+Say
+I must save my friends  
+Player
+Say
+and stop RTS!
+End

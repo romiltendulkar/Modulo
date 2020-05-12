@@ -1,0 +1,17 @@
+ControlRoom
+Narration
+Say
+While searching through the factory
+Narration
+Say
+Modulo found a suspicious room...
+Player
+Say
+This room looks different! 
+Narration
+Say
+Modulo found the Control Room.....
+Narration
+Say
+What will he find there?
+End

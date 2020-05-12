@@ -1,0 +1,29 @@
+{
+  "type": 14,
+  "sprite": {
+    "texture": "victory1.png",
+    "animated": true,
+    "x_off": 0,
+    "y_off": 0,
+    "x_mul": 0.5,
+    "y_mul": 1.0,
+    "speed": 0.5
+  },
+  "transform": {
+    "x": 0,
+    "y": 0,
+    "scaleX": 50.0,
+    "scaleY": 50.0
+  },
+  "body": {
+    "mass": 50,
+    "shape": "rect",
+    "width": 50,
+    "height": 50,
+    "ridged": false,
+    "movable": false
+  },
+  "victory": {
+    "time": 1.15
+  }
+}

@@ -1,0 +1,17 @@
+ControlRoom
+Player
+Say
+ Yeeeeaaahhhhh!!!
+Player
+Say
+ I stopped RTS...
+Narration
+Say
+ But....Did he?
+Enemy
+Say
+ I will be back.
+Player
+Say
+ And I will stop you again.
+End

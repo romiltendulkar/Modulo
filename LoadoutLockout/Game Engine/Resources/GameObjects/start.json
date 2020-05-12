@@ -1,0 +1,26 @@
+{
+  "type": 11,
+  "transform": {
+    "x": 0,
+    "y": 0,
+    "scaleX": 20.0,
+    "scaleY": 20.0
+  },
+  "body": {
+    "mass": 1,
+    "shape": "rect",
+    "width": 20,
+    "height": 20,
+    "ridged": false,
+    "movable": false,
+    "subscribe": true
+  },
+    "sprite": {
+        "texture": "Checkpoint.png",
+        "animate": false
+    },
+    "check": {
+
+    }
+
+}

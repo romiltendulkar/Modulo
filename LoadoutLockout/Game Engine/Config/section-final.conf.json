@@ -1,0 +1,189 @@
+{
+  "background": "ControlRoomBackground.png",
+  "music": "final-level.wav",
+  "cam-type": "full",
+  "match-window": false,
+  "grid_size": 50,
+  "bindings": {
+   "P": {
+      "file": "player.json",
+    "overrides": {
+      "player": {
+        "preset_abilities": false
+      },
+      "transform": {
+        "scaleX": 45.0,
+        "scaleY": 45.0
+      },
+      "body": {
+        "shape": "rect",
+        "width": 24,
+        "height": 45,
+        "match": false
+      }
+    }
+    },
+    "h": {
+      "file": "friend.json"
+    },
+    "a1": {
+      "file": "ability-node.json",
+      "overrides": {
+        "ability-node": {
+          "ability": "double"
+        },
+        "sprite": {
+          "texture": "DoubleJump.png"
+        }
+      }
+    },
+    "c1": {
+      "file": "cage.json",
+      "overrides": {
+        "cage": {
+          "key": "double"
+        },
+        "sprite": {
+          "texture": "JumpLock.png"
+        }
+      }
+    },
+    "a2": {
+      "file": "ability-node.json",
+      "overrides": {
+        "ability-node": {
+          "ability": "dash"
+        },
+        "sprite": {
+          "texture": "DashAbility.png"
+        }
+      }
+    },
+    "c2": {
+      "file": "cage.json",
+      "overrides": {
+        "cage": {
+          "key": "dash"
+        },
+        "sprite": {
+          "texture": "DashLock.png"
+        }
+      }
+    },
+    "a3": {
+      "file": "ability-node.json",
+      "overrides": {
+        "ability-node": {
+          "ability": "spike"
+        },
+        "sprite": {
+          "texture": "ProtectAbility.png"
+        }
+      }
+    },
+    "c3": {
+      "file": "cage.json",
+      "overrides": {
+        "cage": {
+          "key": "spike"
+        },
+        "sprite": {
+          "texture": "ProtectLock.png"
+        }
+      }
+    },
+    "a4": {
+      "file": "ability-node.json",
+      "overrides": {
+        "ability-node": {
+          "ability": "stomp"
+        },
+        "sprite": {
+          "texture": "StompAbility.png"
+        }
+      }
+    },
+    "c4": {
+      "file": "cage.json",
+      "overrides": {
+        "cage": {
+          "key": "stomp"
+        },
+        "sprite": {
+          "texture": "StompLock.png"
+        }
+      }
+    },
+    "|": {
+      "file": "wallv.json"
+    },
+    "-": {
+      "file": "wallh.json"
+    },
+    "#": {
+      "file": "connector.json"
+    },
+    "^": {
+      "file": "spikes.json",
+      "overrides": {
+        "transform": {
+          "scaleX": 45.0,
+          "scaleY": 45.0
+        }
+      }
+    },
+    "*": {
+      "file": "booper.json",
+      "overrides": {
+        "transform": {
+          "scaleX": 45.0,
+          "scaleY": 45.0
+        },
+        "body": {
+          "shape": "rect",
+          "width": 35,
+          "height": 45,
+          "match": false
+        }
+      }
+    },
+    "@": {
+      "file": "state.json",
+      "overrides": {
+        "sprite": {
+          "texture": "DoNotPress.png"
+        }
+      }
+    },
+    "X": {
+      "file": "tutorial.json",
+      "overrides": {
+        "tutorial": {
+          "keyboard": "AngryFinalBoss.png",
+          "controller": "AngryFinalBoss.png"
+        },
+        "sprite": {
+          "texture": "AngryFinalBoss.png"
+        },
+        "transform": {
+          "scaleX": 150.0,
+          "scaleY": 150.0
+        }
+      }
+    },
+    "$": {
+      "file": "start.json"
+    },
+    "s": {
+      "file": "shooter.json"
+    },
+    "S": {
+      "file": "shooter.json",
+      "overrides": {
+        "fire-missle": {
+          "init_delay": 250
+        }
+      }
+    }
+  }
+}

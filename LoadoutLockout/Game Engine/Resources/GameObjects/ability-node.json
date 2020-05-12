@@ -1,0 +1,25 @@
+{
+  "type": 10,
+  "sprite": {
+    "texture": "dash.png",
+    "animated": false
+  },
+  "transform": {
+    "x": 0,
+    "y": 0,
+    "scaleX": 30,
+    "scaleY": 30
+  },
+  "body": {
+    "mass": 1,
+    "shape": "rect",
+    "width": 30,
+    "height": 30,
+    "movable": false,
+    "physics": false,
+    "ridged": false
+  },
+  "ability-node": {
+    "ability": "dash"
+  }
+}

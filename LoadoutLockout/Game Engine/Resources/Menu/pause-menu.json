@@ -1,0 +1,117 @@
+{
+  "0": {
+    "button": "window.json",
+    "overrides": {
+      "sprite": {
+        "texture": "PauseMenuBackground.png"
+      },
+      "transform": {
+        "y": 20,
+        "x": 0,
+        "scaleX": 120.0,
+        "scaleY": 340.0
+      }
+    }
+  },
+  "1": {
+    "button": "button.json",
+    "overrides": {
+      "button": {
+        "id": 2,
+        "level": "resume",
+        "n_selected": "ResumeButton-notused.png",
+        "selected": "ResumeButton-used.png"
+      },
+      "sprite": {
+        "texture": "ResumeButton-notused.png"
+      },
+      "transform": {
+        "x": 0,
+        "y": 100,
+        "scaleY": 45.0,
+        "scaleX": 90.0
+      }
+    }
+  },
+  "2": {
+    "button": "button.json",
+    "overrides": {
+      "button": {
+        "id": 2,
+        "level": "settings.csv",
+        "n_selected": "SettingButton-notused.png",
+        "selected": "SettingButton-used.png"
+      },
+      "sprite": {
+        "texture": "SettingButton-notused.png"
+      },
+      "transform": {
+        "x": 0,
+        "y": 50,
+        "scaleY": 45.0,
+        "scaleX": 90.0
+      }
+    }
+  },
+  "3": {
+    "button": "button.json",
+    "overrides": {
+      "button": {
+        "id": 2,
+        "level": "credits.csv",
+        "n_selected": "CreditsButton-notused.png",
+        "selected": "CreditsButton-used.png"
+      },
+      "sprite": {
+        "texture": "CreditsButton-notused.png"
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "scaleY": 45.0,
+        "scaleX": 90.0
+      }
+    }
+  },
+  "4": {
+    "button": "button.json",
+    "overrides": {
+      "button": {
+        "id": 2,
+        "level": "controls.csv",
+        "n_selected": "ControlsButton-used.png",
+        "selected": "ControlsButton-notused.png"
+      },
+      "sprite": {
+        "texture": "ControlsButton-used.png"
+      },
+      "transform": {
+        "x": 0,
+        "y": -50,
+        "scaleY": 45.0,
+        "scaleX": 90.0
+      }
+    }
+  },
+  "5": {
+    "button": "button.json",
+    "overrides": {
+      "button": {
+        "id": 2,
+        "level": "quit",
+        "n_selected": "ExitButton-notused.png",
+        "selected": "ExitButton-used.png"
+      },
+      "sprite": {
+        "texture": "ExitButton-notused.png"
+      },
+      "transform": {
+        "x": 0,
+        "y": -100,
+        "scaleY": 45.0,
+        "scaleX": 90.0
+      }
+    }
+  }
+
+}

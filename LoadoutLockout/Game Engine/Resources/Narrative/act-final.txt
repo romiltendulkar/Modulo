@@ -1,0 +1,29 @@
+ControlRoom
+Enemy
+Say
+ Who dares step into my room ?
+Player
+Say
+ Who are you ?!
+Enemy
+Say
+ I am RTS
+Enemy
+Say
+ The RANDOM TERRAIN SOLVER!!!
+Enemy
+Say
+ And I control all!
+Player
+Say
+ Except me!!
+Enemy
+Say
+ You, the outdated model..
+Enemy
+Say
+ I dont like you!
+Enemy
+Say
+ Stay away from my big red button!
+End

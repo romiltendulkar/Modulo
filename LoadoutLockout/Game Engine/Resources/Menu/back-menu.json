@@ -1,0 +1,23 @@
+{
+  "1": {
+    "button": "button.json",
+    "overrides": {
+      "button": {
+        "id": 2,
+        "level": "back",
+        "n_selected": "BackButton-notused.png",
+        "selected": "BackButton-used.png"
+      },
+      "sprite": {
+        "texture": "BackButton-notused.png"
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "scaleX": 90.0,
+        "scaleY": 70.0
+      }
+    }
+  }
+
+}

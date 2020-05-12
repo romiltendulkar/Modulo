@@ -1,0 +1,23 @@
+{
+  "type": 17,
+  "sprite": {
+    "texture": "cursor.png"
+  },
+  "transform": {
+    "x": 0,
+    "y": 0,
+    "scaleX": 30.0,
+    "scaleY": 40.0
+  },
+  "body": {
+    "mass": 1,
+    "shape": "rect",
+    "width": 30,
+    "height": 40,
+    "ridged": false,
+    "movable": true,
+    "physics": false,
+    "subscribe": false
+  },
+  "cursor": {}
+}

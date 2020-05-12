@@ -1,0 +1,23 @@
+{
+  "background": "Startbackground.png",
+  "match-window": true,
+  "music": "",
+  "cam-type": "full",
+  "grid_size": 175,
+  "bindings": {
+    "B": {
+      "file": "button.json",
+      "overrides": {
+        "button": {
+          "id": 3,
+          "level": "back",
+          "selected": "BackButton-used.png",
+          "n_selected": "BackButton-notused.png"
+        },
+        "sprite": {
+          "texture": "BackButton-notused.png"
+        }
+      }
+    }
+  }
+}

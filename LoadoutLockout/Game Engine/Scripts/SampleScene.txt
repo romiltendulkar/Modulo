@@ -1,0 +1,12 @@
+player
+set
+0 20
+enemy
+set
+800 20 
+player
+walk
+1 100
+enemy
+walk
+-1 100

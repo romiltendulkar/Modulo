@@ -1,0 +1,37 @@
+﻿{
+  "0": {
+    "button": "victory.json",
+    "overrides": {
+      "sprite": {
+        "texture": "Game-Cleared.png"
+      },
+      "transform": {
+        "x": 0,
+        "y": 20,
+        "scaleX": 400.0,
+        "scaleY": 300.0
+      }
+    }
+  },
+  "1": {
+    "button": "button.json",
+    "overrides": {
+      "button": {
+        "id": 2,
+        "level": "next",
+        "n_selected": "NextButton-notused.png",
+        "selected": "NextButton-used.png"
+      },
+      "sprite": {
+        "texture": "NextButton-notused.png"
+      },
+      "transform": {
+        "x": 250,
+        "y": -150,
+        "scaleX": 90.0,
+        "scaleY": 70.0
+      }
+    }
+  }
+
+}

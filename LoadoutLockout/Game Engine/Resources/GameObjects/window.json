@@ -1,0 +1,21 @@
+{
+  "type": 14,
+  "transform": {
+    "x": 0,
+    "y": 0,
+    "scaleX": 100,
+    "scaleY": 100
+  },
+  "body": {
+    "mass": 1,
+    "shape": "rect",
+    "width": 100,
+    "height": 100,
+    "ridged": false,
+    "movable": false
+  },
+  "sprite": {
+    "texture": "",
+    "animated": false
+  }
+}

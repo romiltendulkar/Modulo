@@ -1,0 +1,17 @@
+Outside
+Narration
+Say
+Modulo then escaped the scrap yard
+Narration
+Say
+But!
+Narration
+Say
+Half of the city was empty.....
+Player
+Say
+Where are my friends?!
+Narration
+Say
+What could have happened to them?
+End

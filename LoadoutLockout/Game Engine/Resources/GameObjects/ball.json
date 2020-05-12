@@ -1,0 +1,21 @@
+{
+  "sprite": {
+    "texture": "ball.png"
+  },
+  "transform": {
+    "x": 0,
+    "y": 0,
+    "scaleX": 20,
+    "scaleY": 20
+  },
+  "body": {
+    "mass": 25,
+    "shape": "circle",
+    "radius": 10,
+    "ridged": false,
+    "movable": true,
+    "subscribe": true
+  },
+  "ball": { "speed": 200.0 },
+  "damage": { "damage" : 10 }
+}

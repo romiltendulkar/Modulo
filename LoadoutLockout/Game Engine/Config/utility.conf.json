@@ -1,0 +1,255 @@
+{
+  "background": "background4.png",
+  "match-window": true,
+  "music": "intro-music.wav",
+  "cam-type": "full",
+  "grid_size": 175,
+  "bindings": {
+    "F": {
+      "file": "button.json",
+      "overrides": {
+        "button": {
+          "id": 1,
+          "level": "full-screen",
+          "selected": "fullscreennotselected_hovered.png",
+          "n_selected": "fullscreennotselected_nothovered.png"
+        },
+        "sprite": {
+          "texture": "fullscreennotselected_nothovered.png"
+        },
+        "transform": {
+          "scaleX": 300.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "s1": {
+      "file": "button.json",
+      "overrides": {
+        "button": {
+          "id": 1,
+          "level": "Volume-Up-Master",
+          "selected": "UpArrowSelected.png",
+          "n_selected": "UpArrow.png"
+        },
+        "sprite": {
+          "texture": "UpArrow.png"
+        },
+        "transform": {
+          "scaleX": 150.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "s2": {
+      "file": "button.json",
+      "overrides": {
+        "button": {
+          "id": 1,
+          "level": "Volume-Down-Masters",
+          "selected": "DownArrowSelected.png",
+          "n_selected": "DownArrow.png"
+        },
+        "sprite": {
+          "texture": "DownArrow.png"
+        },
+        "transform": {
+          "scaleX": 150.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "s3": {
+      "file": "button.json",
+      "overrides": {
+        "button": {
+          "id": 1,
+          "level": "Volume-Up-Music",
+          "selected": "UpArrowSelected.png",
+          "n_selected": "UpArrow.png"
+        },
+        "sprite": {
+          "texture": "UpArrow.png"
+        },
+        "transform": {
+          "scaleX": 150.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "s4": {
+      "file": "button.json",
+      "overrides": {
+        "button": {
+          "id": 1,
+          "level": "Volume-Down-Music",
+          "selected": "DownArrowSelected.png",
+          "n_selected": "DownArrow.png"
+        },
+        "sprite": {
+          "texture": "DownArrow.png"
+        },
+        "transform": {
+          "scaleX": 150.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "s5": {
+      "file": "button.json",
+      "overrides": {
+        "button": {
+          "id": 1,
+          "level": "Volume-Up-SFX",
+          "selected": "UpArrowSelected.png",
+          "n_selected": "UpArrow.png"
+        },
+        "sprite": {
+          "texture": "UpArrow.png"
+        },
+        "transform": {
+          "scaleX": 150.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "s6": {
+      "file": "button.json",
+      "overrides": {
+        "button": {
+          "id": 1,
+          "level": "Volume-Down-SFX",
+          "selected": "DownArrowSelected.png",
+          "n_selected": "DownArrow.png"
+        },
+        "sprite": {
+          "texture": "DownArrow.png"
+        },
+        "transform": {
+          "scaleX": 150.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "s7": {
+      "file": "button.json",
+      "overrides": {
+        "button": {
+          "id": 1,
+          "level": "Mute-Master",
+          "selected": "Masternotselected_hovered.png",
+          "n_selected": "Masternotselected_nothovered.png"
+        },
+        "sprite": {
+          "texture": "Masternotselected_nothovered.png"
+        },
+        "transform": {
+          "scaleX": 300.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "s8": {
+      "file": "button.json",
+      "overrides": {
+        "button": {
+          "id": 1,
+          "level": "Mute-Music",
+          "selected": "MusicNotselected_hovered.png",
+          "n_selected": "MusicNotselected_nothovered.png"
+        },
+        "sprite": {
+          "texture": "MusicNotselected_nothovered.png"
+        },
+        "transform": {
+          "scaleX": 300.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "s9": {
+      "file": "button.json",
+      "overrides": {
+        "button": {
+          "id": 1,
+          "level": "Mute-SFX",
+          "selected": "SFXnotselected_hovered.png",
+          "n_selected": "SFXnotselected_nothovered.png"
+        },
+        "sprite": {
+          "texture": "SFXnotselected_nothovered.png"
+        },
+        "transform": {
+          "scaleX": 300.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "B": {
+      "file": "button.json",
+      "overrides": {
+        "button": {
+          "id": 3,
+          "level": "back",
+          "selected": "BackButton-used.png",
+          "n_selected": "BackButton-notused.png"
+        },
+        "sprite": {
+          "texture": "BackButton-notused.png"
+        },
+        "transform": {
+          "scaleX": 300.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "ma": {
+      "file": "wallv.json",
+      "overrides": {
+        "sprite": {
+          "texture": "MasterTexture.png"
+        },
+        "transform": {
+          "scaleX": 300.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "mu": {
+      "file": "wallv.json",
+      "overrides": {
+        "sprite": {
+          "texture": "MusicTexture.png"
+        },
+        "transform": {
+          "scaleX": 300.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "sf": {
+      "file": "wallv.json",
+      "overrides": {
+        "sprite": {
+          "texture": "SFXTexture.png"
+        },
+        "transform": {
+          "scaleX": 300.0,
+          "scaleY": 50.0
+        }
+      }
+    },
+    "st": {
+      "file": "wallv.json",
+      "overrides": {
+        "sprite": {
+          "texture": "Settingsword.png"
+        },
+        "transform": {
+          "scaleX": 300.0,
+          "scaleY": 50.0
+        }
+      }
+    }
+  }
+}

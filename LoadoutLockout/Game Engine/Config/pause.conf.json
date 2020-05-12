@@ -1,0 +1,7 @@
+{
+  "background": "Howtoplay.png",
+  "music": "intro-music.wav",
+  "cam-type": "full",
+  "match-window": true,
+  "grid_size": 0
+}

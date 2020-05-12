@@ -1,0 +1,27 @@
+{
+  "type": 2,
+  "sprite": {
+    "texture": "shooter.png"
+  },
+  "transform": {
+    "x": 0,
+    "y": 0,
+    "scaleX": 40,
+    "scaleY": 40
+  },
+  "body": {
+    "mass": 100,
+    "shape": "rect",
+    "width": 40,
+    "height": 40,
+    "ridged": true,
+    "movable": false
+  },
+  "fire-missle": {
+    "reload-time": 2000,
+    "missle-name": "burst.json",
+    "speed": -2.25,
+    "m_type": 5,
+    "random": false
+  }
+}

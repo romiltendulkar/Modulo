@@ -1,0 +1,20 @@
+{
+  "type": 7,
+  "sprite": {
+    "texture": "Pipe.png"
+  },
+  "transform": {
+    "x": 0,
+    "y": 0,
+    "scaleX": 50.0,
+    "scaleY": 50.0
+  },
+  "body": {
+    "mass": 50,
+    "shape": "rect",
+    "width": 50,
+    "height": 50,
+    "ridged": true,
+    "movable": false
+  }
+}
